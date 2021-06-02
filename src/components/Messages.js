@@ -1,1 +1,3 @@
-import App from '../App';
+const Messages = () => {
+    return <h1>{'sjkldgaop'#}</h1>
+}
