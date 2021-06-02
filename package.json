@@ -14,13 +14,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "eslint",
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },
   "husky": {
     "hooks": {
-      "precommit": "npm t",
+      "precommit": "npm test",
       "posttest": "eslint ./ --fix"
     }
   },
