@@ -1,15 +1,17 @@
+import { Typography } from '@material-ui/core';
 import React, { useContext } from 'react';
+import 
 
 const NewMessage = (message) => {
   // Message comes from PostMessageForm component (event.target.value)
-  //   const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
   const { user } = useContext(UserContext);
 
   return (
     <div>
-      <p>{user}</p>
-      <p>{new Date()}</p>
-      <p>{message}</p>
+      <Typography variant="caption">{user}</Typography>
+      <Typography variant="caption">{new Date()}</Typography>
+      <Typography>{message}</Typography>
     </div>
   );
 };
